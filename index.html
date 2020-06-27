@@ -18,10 +18,9 @@
 </head>
 
 <body>
-
-    <header class="jumbotron jumbotron-fluid">
+  <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row row-content align-items-center">
+            <div class="row align-items-center">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                  </div>
@@ -35,6 +34,7 @@
             </div>
         </div>
     </header>
+  
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -103,27 +103,31 @@
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
-                    <h3 class="text-white bg-info">Reserve a Campsite</h3>
+                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label for="numCampers" class="col-sm-6 col-form-label pl-0">Number of Campers</label>                            
-                                <select class="form-control col" id="numCampers" name="numCampers">
-                                    <option>Select....</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>                            
+                                <div class="col">
+                                    <select class="form-control col" id="numCampers" name="numCampers">
+                                            <option>Select....</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                </div>
                             </div>
                             <div class="row form-group">
-                                <label for="date" class="col-sm-6 col-form-label pl-0">Date</label>
-                                <input class="form-control col" type="date" id="date" name="date" placeholder="Select Date">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">
+                                    <input class="form-control col" type="date" id="date" name="date" placeholder="Select Date">
+                                </div>
                             </div>
                             <div class="row form-group">
-                                <div class="col pl-0">
+                                <div class="col">
                                     <button type="sumbit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
